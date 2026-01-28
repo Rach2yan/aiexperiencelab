@@ -321,3 +321,13 @@ h1{
   .grid{grid-template-columns: 1fr;}
   .nav-links{display:none;}
 }
+
+/* Ensure chat widget stays above page content */
+#Microsoft_Omnichannel_LCWidget,
+#oc-lcw,
+.oc-chat-widget,
+iframe[title*="chat" i]{
+  z-index: 99999 !important;
+}
+
+
