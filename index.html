@@ -1,16 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>This is a Project for Rachel's Chatbot</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HarborStone Bank</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="#">
+          <div class="brand-badge"><span></span></div>
+          <div class="brand-name">
+            <strong>HarborStone Bank</strong>
+            <small>Private • Secure • Digital</small>
+          </div>
+        </a>
 
-  <footer>
-    This website is a demo environment for presentation purposes only.
+        <div class="nav-links">
+          <a href="#">Personal</a>
+          <a href="#">Cards</a>
+          <a href="#">Support</a>
+          <a href="#">Security</a>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="#">Find a Branch</a>
+          <a class="btn btn-primary" href="#">Log In</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="hero-inner">
+            <div class="kicker"><span class="kicker-dot"></span> Always-on digital support</div>
+            <h1>How can we help you today?</h1>
+            <p class="sub">
+              Get quick help with card issues, account concerns, and suspicious transactions.
+              If you need a specialist, we’ll connect you with the right team.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#">Report an unrecognized transaction</a>
+              <a class="btn" href="#">I’ve lost my card</a>
+              <a class="btn" href="#">Speak to a specialist</a>
+            </div>
+
+            <div class="trust-strip">
+              <div class="trust-item"><span class="icon">✓</span> Secure by design</div>
+              <div class="trust-item"><span class="icon">⏱</span> Faster resolution</div>
+              <div class="trust-item"><span class="icon">👤</span> Human help when needed</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-card">
+          <div class="side-inner">
+            <h3 class="side-title">Today’s service status</h3>
+            <p class="side-sub">Digital support is available. Specialist transfer may take a few minutes during peak hours.</p>
+            <div class="pill"><b>Live</b> Chat support</div>
+            <p class="chat-note">
+              Tip: Start a chat using the widget in the bottom-right corner. Your information will be captured to help resolve your request.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="tile">
+        <div class="badge">Cards</div>
+        <h3>Lost or stolen card</h3>
+        <p>Freeze your card quickly and connect with a specialist if needed.</p>
+        <div class="mini">
+          <span class="badge">Recommended</span>
+          <a class="btn" href="#">Start</a>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="badge">Fraud</div>
+        <h3>Unrecognized transaction</h3>
+        <p>Tell us what happened. We’ll guide you through next steps.</p>
+        <div class="mini">
+          <span class="badge">Guided</span>
+          <a class="btn" href="#">Start</a>
+        </div>
+      </div>
+
+      <div class="tile">
+        <div class="badge">Support</div>
+        <h3>General enquiries</h3>
+        <p>Ask about accounts, fees, cards, and service requests.</p>
+        <div class="mini">
+          <span class="badge">Instant</span>
+          <a class="btn" href="#">Start</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="y"></span> HarborStone Bank. For demo purposes only.
+    </div>
   </footer>
 
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Chat widget script goes here -->
 </body>
 </html>
